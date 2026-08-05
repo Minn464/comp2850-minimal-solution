@@ -54,8 +54,9 @@
 }
 
 *:focus {
-  outline: 3px solid #facc15;
-  outline-offset: 3px;
+  outline: 3px solid #facc15 !important;
+  outline-offset: 3px !important;
+  box-shadow: none !important;
 }
 
 button:focus,
@@ -64,8 +65,9 @@ input:focus,
 textarea:focus,
 select:focus,
 [tabindex]:focus {
-  outline: 3px solid #facc15;
-  outline-offset: 3px;
+  outline: 3px solid #facc15 !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 3px #facc15 !important;
 }
 
 /* ========================================
