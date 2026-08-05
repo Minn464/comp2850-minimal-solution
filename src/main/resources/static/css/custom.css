@@ -50,17 +50,23 @@
    Focus Indicators (WCAG 2.4.7)
    ======================================== */
 *:focus {
-  outline: 3px solid #facc15;
-  outline-offset: 3px;
+  outline: 3px solid #facc15 !important;
+  outline-offset: 3px !important;
 }
 
 button:focus,
 a:focus,
 input:focus,
 textarea:focus,
-select:focus {
-  outline: 3px solid #facc15;
-  outline-offset: 3px;
+select:focus,
+[tabindex]:focus {
+  outline: 3px solid #facc15 !important;
+  outline-offset: 3px !important;
+}
+
+:where(a, button, input, textarea, select, [tabindex]):focus {
+  outline: 3px solid #facc15 !important;
+  outline-offset: 3px !important;
 }
 
 /* ========================================
