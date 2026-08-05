@@ -49,9 +49,15 @@
 /* ========================================
    Focus Indicators (WCAG 2.4.7)
    ======================================== */
+
+:root {
+  --pico-primary-focus: #facc15;
+}
+
 *:focus {
   outline: 3px solid #facc15 !important;
   outline-offset: 3px !important;
+  box-shadow: 0 0 0 3px #facc15 !important;
 }
 
 button:focus,
@@ -62,11 +68,13 @@ select:focus,
 [tabindex]:focus {
   outline: 3px solid #facc15 !important;
   outline-offset: 3px !important;
+  box-shadow: 0 0 0 3px #facc15 !important;
 }
 
 :where(a, button, input, textarea, select, [tabindex]):focus {
   outline: 3px solid #facc15 !important;
   outline-offset: 3px !important;
+  box-shadow: 0 0 0 3px #facc15 !important;
 }
 
 /* ========================================
